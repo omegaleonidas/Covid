@@ -110,7 +110,7 @@
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/Card_penangann"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="300dp"
                     android:layout_margin="15dp"
 
                     android:layout_marginTop="28dp"
@@ -126,6 +126,23 @@
 
                         <com.airbnb.lottie.LottieAnimationView
 
+                            android:id="@+id/appCompatImageView6"
+                            android:layout_width="92dp"
+
+                            android:layout_height="95dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="12dp"
+                            app:layout_constraintStart_toEndOf="@+id/appCompatImageView5"
+                            app:layout_constraintTop_toBottomOf="@+id/textView10"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/water">
+
+
+                        </com.airbnb.lottie.LottieAnimationView>
+
+                        <com.airbnb.lottie.LottieAnimationView
+
                             android:id="@+id/appCompatImageView"
                             android:layout_width="92dp"
 
@@ -137,6 +154,40 @@
                             app:lottie_autoPlay="true"
                             app:lottie_loop="true"
                             app:lottie_rawRes="@raw/cuci_tangan">
+
+
+                        </com.airbnb.lottie.LottieAnimationView>
+
+                        <com.airbnb.lottie.LottieAnimationView
+
+                            android:id="@+id/appCompatImageView4"
+                            android:layout_width="92dp"
+
+                            android:layout_height="95dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="12dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView8"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/stay_home">
+
+
+                        </com.airbnb.lottie.LottieAnimationView>
+
+                        <com.airbnb.lottie.LottieAnimationView
+
+                            android:id="@+id/appCompatImageView5"
+                            android:layout_width="92dp"
+
+                            android:layout_height="95dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="12dp"
+                            app:layout_constraintStart_toEndOf="@+id/appCompatImageView4"
+                            app:layout_constraintTop_toBottomOf="@+id/textView9"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/kesehatan">
 
 
                         </com.airbnb.lottie.LottieAnimationView>
@@ -190,6 +241,17 @@
                             app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
 
                         <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="12dp"
+
+                            android:text="Cuci Tangan"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView4" />
+
+                        <TextView
                             android:id="@+id/textView9"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -201,6 +263,17 @@
                             app:layout_constraintTop_toBottomOf="@+id/appCompatImageView2" />
 
                         <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="36dp"
+
+                            android:layout_marginTop="12dp"
+                            android:text="Pakai Masker"
+                            app:layout_constraintStart_toEndOf="@+id/textView11"
+                            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView5" />
+
+                        <TextView
                             android:id="@+id/textView10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -210,6 +283,17 @@
 
                             app:layout_constraintStart_toEndOf="@+id/textView9"
                             app:layout_constraintTop_toBottomOf="@+id/appCompatImageView3" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+
+                            android:layout_marginTop="12dp"
+                            android:text="jaga Jarak"
+                            app:layout_constraintStart_toEndOf="@+id/textView12"
+                            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView6" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>

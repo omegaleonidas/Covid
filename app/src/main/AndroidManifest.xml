@@ -10,14 +10,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/FullScreen">
-        <activity android:name=".FlashScreen"></activity>
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"      android:theme="@style/AppTheme">  </activity>
         <activity android:name=".Activity_All_kota"   />
         <activity android:name=".GarafikAtivity" android:theme="@style/FullScreen"/>
         <activity android:name=".activity_padang" />
         <activity android:name=".Activity_padang_panjang" />
         <activity android:name=".network.Main2Activity" />
-        <activity android:name=".MainActivity"
+        <activity android:name=".FlashScreen"
             android:theme="@style/FullScreen"
             >
             <intent-filter>
