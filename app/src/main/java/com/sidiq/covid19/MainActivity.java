@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private ArrayList<String> xValues = new ArrayList<>();
 
-    private Button B_PadangPanjang, B_payakumbuh, B_Padang, B_bukittinggi, grafik, b_allKota;
+    private Button  grafik, b_allKota;
     private CovidData covidData1;
     private CardView cardView;
 

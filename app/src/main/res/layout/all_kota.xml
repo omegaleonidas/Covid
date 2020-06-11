@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/colorAccent"
     android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
 
 
     >
@@ -36,10 +36,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="24dp"
                 android:text="kota / kabupaten :"
-                android:textColor="#1E90FF"
-                android:textSize="20sp"
+
+                android:textSize="17sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,12 +48,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:paddingEnd="30dp"
-                android:text="tanggal/ jam update :"
+                android:layout_marginTop="12dp"
 
-                android:textColor="#1E90FF"
-                android:textSize="18sp"
+                android:text="tanggal update :"
+
+
+                android:textSize="17sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -61,10 +61,11 @@
                 android:id="@+id/txt_kota"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
+
                 android:text="KOta"
+
 
 
                 android:textSize="17sp"
@@ -75,11 +76,12 @@
                 android:id="@+id/txt_update"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
                 android:paddingEnd="30dp"
-
                 android:text="updata"
+
+
                 android:textSize="17sp"
                 app:layout_constraintStart_toEndOf="@+id/textView7"
                 app:layout_constraintTop_toBottomOf="@+id/txt_kota" />
@@ -155,8 +157,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="100"
-                    android:textSize="20dp"
                     android:textColor="#2196F3"
+                    android:textSize="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.354"
                     app:layout_constraintStart_toStartOf="parent"
@@ -194,8 +196,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:textColor="#2196F3"
                     android:text="100"
+                    android:textColor="#2196F3"
                     android:textSize="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -268,8 +270,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:textColor="#2196F3"
                     android:text="100"
+                    android:textColor="#2196F3"
                     android:textSize="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.483"
@@ -288,6 +290,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.672"
                 app:layout_constraintStart_toStartOf="parent"
+
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.849" />
 
@@ -300,6 +303,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.265"
+
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.849" />
@@ -309,7 +313,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="|"
-                android:textSize="50dp"
+                android:textSize="70dp"
+
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.481"

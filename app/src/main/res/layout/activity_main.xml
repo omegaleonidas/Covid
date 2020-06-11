@@ -96,12 +96,13 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
                     android:paddingLeft="10dp"
                     android:paddingTop="15dp"
-                    android:text="PENANGANAN VIRUS  : "
-                    android:textColor="@color/colorAccent"
-                    android:textSize="18dp"
+                    android:text="Penangan Covid-19  :"
 
+
+                    android:textSize="18dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textButton">
 
@@ -247,7 +248,7 @@
                             android:layout_marginStart="28dp"
                             android:layout_marginTop="12dp"
 
-                            android:text="Cuci Tangan"
+                            android:text="Di rumah aja"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/appCompatImageView4" />
 
@@ -266,10 +267,10 @@
                             android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="36dp"
+                            android:layout_marginStart="27dp"
 
                             android:layout_marginTop="12dp"
-                            android:text="Pakai Masker"
+                            android:text="Jaga Kesehatan"
                             app:layout_constraintStart_toEndOf="@+id/textView11"
                             app:layout_constraintTop_toBottomOf="@+id/appCompatImageView5" />
 
@@ -288,10 +289,9 @@
                             android:id="@+id/textView13"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="60dp"
-
+                            android:layout_marginStart="36dp"
                             android:layout_marginTop="12dp"
-                            android:text="jaga Jarak"
+                            android:text="Banyak Minum"
                             app:layout_constraintStart_toEndOf="@+id/textView12"
                             app:layout_constraintTop_toBottomOf="@+id/appCompatImageView6" />
 

@@ -17,7 +17,7 @@ public class FlashScreen extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    sleep(5500);
+                    sleep(4000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
