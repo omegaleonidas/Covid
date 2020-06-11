@@ -41,5 +41,8 @@ dependencies {
     //material
     implementation 'com.google.android.material:material:1.0.0-alpha1'
 
+    //gamber bergerak
+    implementation 'com.airbnb.android:lottie:3.4.0'
+
 
 }

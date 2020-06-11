@@ -81,8 +81,7 @@ public class GarafikAtivity extends AppCompatActivity {
 
             sembuhValues.add(new Entry(i, Float.parseFloat(covidData1.get(i).getCovidSembuh())));
             i++;
-            Log.e("positif", "" + covidData1.get(i).getPositif());
-            Log.e("sembuh", "" + covidData1.get(i).getCovidSembuh());
+
 
 
             LineDataSet set1 = new LineDataSet(yValues, "positif");
@@ -103,6 +102,7 @@ public class GarafikAtivity extends AppCompatActivity {
             set2.setLineWidth(3);
             LineData data2 = new LineData(dataSets);
             lineChart.setData(data);
+            lineChart.invalidate();
 
 
         }

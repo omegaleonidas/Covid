@@ -40,19 +40,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button B_PadangPanjang, B_payakumbuh, B_Padang, B_bukittinggi, grafik, b_allKota;
     private CovidData covidData1;
+    private CardView cardView;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        B_PadangPanjang = findViewById(R.id.btnPadangPanjang);
-        B_Padang = findViewById(R.id.btnpadang);
-        B_payakumbuh = findViewById(R.id.btnPayakumbuh);
-        B_bukittinggi = findViewById(R.id.btnBukitTinggi);
+
         b_allKota = findViewById(R.id.textBtnALL_KOta);
         tempat = findViewById(R.id.txttempat);
         waktu = findViewById(R.id.txtjam);
+        cardView = findViewById(R.id.Card_penangann);
+        cardView.invalidate();
         grafik = findViewById(R.id.textButton);
         if (Build.VERSION.SDK_INT < 16) {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -60,12 +60,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
 
-        B_PadangPanjang.setOnClickListener(this);
-        B_Padang.setOnClickListener(this);
+
         grafik.setOnClickListener(this);
-        B_payakumbuh.setOnClickListener(this);
-        B_bukittinggi.setOnClickListener(this);
-        B_bukittinggi.setOnClickListener(this);
+
+
         b_allKota.setOnClickListener(this);
 
         loadData();
@@ -120,24 +118,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnPadangPanjang:
-                Intent intent = new Intent(getApplicationContext(), Activity_padang_panjang.class);
-                startActivity(intent);
-                break;
-            case R.id.btnpadang:
-                Intent intent1 = new Intent(getApplicationContext(), activity_padang.class);
-                startActivity(intent1);
-                break;
+
             case R.id.textButton:
                 Intent intent2 = new Intent(getApplicationContext(), GarafikAtivity.class);
                 startActivity(intent2);
                 break;
-            case R.id.btnBukitTinggi:
-                Toast.makeText(getApplicationContext(), "Comming Soon", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.btnPayakumbuh:
-                Toast.makeText(getApplicationContext(), "Comming Soon", Toast.LENGTH_SHORT).show();
-                break;
+
             case R.id.textBtnALL_KOta:
                 Intent intent3 = new Intent(getApplicationContext(), Activity_All_kota.class);
                 startActivity(intent3);
