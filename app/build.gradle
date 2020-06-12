@@ -37,7 +37,7 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     // chart
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
-
+    
     //material
     implementation 'com.google.android.material:material:1.0.0-alpha1'
 

@@ -34,13 +34,13 @@ public class GarafikAtivity extends AppCompatActivity {
         setContentView(R.layout.activity_garafik_ativity);
 
 
-        tampil_grafik();
+        tampilGrafik();
 
 
     }
 
 
-    private void tampil_grafik() {
+    private void tampilGrafik() {
         ApiInterface server = ApiServices.getRetrofit().create(ApiInterface.class);
         final Call<List<CovidData>> listCall = server.getAllData();
         listCall.enqueue(new Callback<List<CovidData>>() {
