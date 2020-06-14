@@ -4,16 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Activity_All_kota">
 
+    <com.github.ybq.android.spinkit.SpinKitView
+
+        android:id="@+id/spin_kti3"
+        style="@style/SpinKitView.MultiplePulse"
+        android:layout_width="92dp"
+        android:layout_height="94dp"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_Kota" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_Kota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:layout_marginTop="44dp"
+
+        android:layoutAnimation="@anim/layour_animation_fall_down"
         app:layout_constraintTop_toBottomOf="@+id/txtjam"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="124dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

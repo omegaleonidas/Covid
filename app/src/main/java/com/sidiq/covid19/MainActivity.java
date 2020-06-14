@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,9 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.github.ybq.android.spinkit.sprite.Sprite;
+import com.github.ybq.android.spinkit.style.Circle;
+import com.github.ybq.android.spinkit.style.DoubleBounce;
 import com.sidiq.covid19.Adapter.LastUpdateAdapter;
 import com.sidiq.covid19.model.CovidData;
 import com.sidiq.covid19.network.ApiInterface;
@@ -37,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private CovidData covidData1;
     private CardView cardView;
 
+private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +53,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         waktu = findViewById(R.id.txtjam);
         cardView = findViewById(R.id.Card_penangann);
         cardView.invalidate();
+
+        progressBar = findViewById(R.id.spin_ki2);
+        Sprite doubleBounce = new Circle();
+        progressBar.setIndeterminateDrawable(doubleBounce);
+        showLoading(true);
+
         grafik = findViewById(R.id.textButton);
         if (Build.VERSION.SDK_INT < 16) {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -85,6 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (response.isSuccessful()) {
                     CovidData covidData = new CovidData();
                     covidData1 = response.body();
+                    showLoading(false);
                     covidData.setTotalOdp(response.body().getTotalOdp());
                     covidData.setPdp(response.body().getPdp());
                     tempat.setText(covidData1.getProvinsi());
@@ -123,6 +135,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent3);
                 break;
 
+        }
+    }
+    private void showLoading(Boolean state) {
+        if (state) {
+            progressBar.setVisibility(View.VISIBLE);
+        } else {
+            progressBar.setVisibility(View.GONE);
         }
     }
 }

@@ -3,6 +3,8 @@ package com.sidiq.covid19;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +13,9 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
+import com.github.ybq.android.spinkit.sprite.Sprite;
+import com.github.ybq.android.spinkit.style.Circle;
+import com.github.ybq.android.spinkit.style.DoubleBounce;
 import com.sidiq.covid19.model.CovidData;
 import com.sidiq.covid19.network.ApiInterface;
 import com.sidiq.covid19.network.ApiServices;
@@ -27,12 +32,18 @@ public class GarafikAtivity extends AppCompatActivity {
     private List<CovidData> covidData1 = new ArrayList<>();
 
     private LineChart lineChart;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_garafik_ativity);
 
+
+        progressBar = findViewById(R.id.spin_ki1);
+        Sprite doubleBounce = new Circle();
+        progressBar.setIndeterminateDrawable(doubleBounce);
+        showLoading(true);
 
         tampilGrafik();
 
@@ -47,9 +58,12 @@ public class GarafikAtivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<CovidData>> call, Response<List<CovidData>> response) {
                 if (response.isSuccessful()) {
+                    showLoading(false);
                     covidData1 = response.body();
+
                     grafikList(response.body());
                     grafikList(covidData1);
+
                     Log.e("datamasuk", "" + covidData1.get(20).getCovidDirawat());
                 }
 
@@ -66,6 +80,7 @@ public class GarafikAtivity extends AppCompatActivity {
 
 
     private void grafikList(List<CovidData> covidData1) {
+
         lineChart = findViewById(R.id.chart);
 
         lineChart.setDragEnabled(true);
@@ -81,7 +96,6 @@ public class GarafikAtivity extends AppCompatActivity {
 
             sembuhValues.add(new Entry(i, Float.parseFloat(covidData1.get(i).getCovidSembuh())));
             i++;
-
 
 
             LineDataSet set1 = new LineDataSet(yValues, "positif");
@@ -107,6 +121,14 @@ public class GarafikAtivity extends AppCompatActivity {
 
         }
 
+    }
+
+    private void showLoading(Boolean state) {
+        if (state) {
+            progressBar.setVisibility(View.VISIBLE);
+        } else {
+            progressBar.setVisibility(View.GONE);
+        }
     }
 
 

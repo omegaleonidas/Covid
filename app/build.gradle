@@ -37,12 +37,17 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     // chart
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
     
     //material
     implementation 'com.google.android.material:material:1.0.0-alpha1'
 
     //gamber bergerak
     implementation 'com.airbnb.android:lottie:3.4.0'
+
+    //progress
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
 
 
 }
