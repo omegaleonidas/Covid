@@ -65,6 +65,7 @@ public class AdapterAllKota extends RecyclerView.Adapter<AdapterAllKota.ViewHold
                 intentDetail.putExtra("update", resultsItems.get(holder.getAdapterPosition()).getTglUpdate());
 
 
+
                 intentDetail.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intentDetail);
             }
@@ -98,7 +99,7 @@ public class AdapterAllKota extends RecyclerView.Adapter<AdapterAllKota.ViewHold
             txtTempat = itemView.findViewById(R.id.txt_kota);
             cardView = itemView.findViewById(R.id.cardView1);
             txtWaktu = itemView.findViewById(R.id.txt_update);
-            button = itemView.findViewById(R.id.textButton1);
+
 
 
 

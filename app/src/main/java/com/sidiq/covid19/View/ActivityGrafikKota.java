@@ -90,13 +90,14 @@ public class ActivityGrafikKota extends AppCompatActivity {
         PieChartView pieChartView = findViewById(R.id.chart);
         List<SliceValue> pieData = new ArrayList<>();
         pieData.add(new SliceValue(angka1, Color.RED));
-        pieData.add(new SliceValue(Float.parseFloat(sembuh), Color.BLUE));
+        pieData.add(new SliceValue(Float.parseFloat(sembuh), Color.BLUE).setLabel("positif"));
         pieData.add(new SliceValue(Float.parseFloat(pdp), Color.GREEN));
         pieData.add(new SliceValue(Float.parseFloat(odp), Color.MAGENTA));
         PieChartData pieChartData = new PieChartData(pieData);
 
 
-       // pieChartData.setHasCenterCircle(true).setCenterText1("").setCenterText1FontSize(20).setCenterText1Color(Color.parseColor("#0097A7"));
+
+       //pieChartData.setHasCenterCircle(true).setCenterText1("").setCenterText1FontSize(20).setCenterText1Color(Color.parseColor("#0097A7"));
         pieChartView.setPieChartData(pieChartData);
 
 

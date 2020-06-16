@@ -24,10 +24,10 @@
         android:id="@+id/chart"
         android:layout_width="184dp"
         android:layout_height="216dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tanggal_update" />
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <androidx.cardview.widget.CardView
 
@@ -36,37 +36,38 @@
         android:layout_width="43dp"
         android:layout_height="26dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="24dp"
+
+
         android:background="#FA0000"
-
-
         app:cardCornerRadius="30dp"
         app:layout_constraintStart_toEndOf="@+id/chart"
-        app:layout_constraintTop_toBottomOf="@+id/tanggal_update" />
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
         android:text="Positf "
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/buttonRed"
-        app:layout_constraintTop_toBottomOf="@+id/tanggal_update" />
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
         android:id="@+id/kabupaten_kota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
 
         android:layout_marginEnd="252dp"
         android:text="Data Covid   "
         android:textColor="#ffffff"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
@@ -74,7 +75,7 @@
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="24dp"
         android:text="Sembuh "
         android:textSize="18sp"
@@ -82,20 +83,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="20dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chart" />
-
-    <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="24dp"
         android:text="Pdp"
         android:textSize="18sp"
@@ -103,40 +94,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
-
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="4dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView27"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
-
-    <TextView
-        android:id="@+id/textView31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView28"
-        app:layout_constraintTop_toBottomOf="@+id/textView30" />
-
-    <TextView
         android:id="@+id/TxtOdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="24dp"
         android:text="20"
         android:textSize="18sp"
@@ -147,7 +108,7 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="Odp"
         android:textSize="18sp"
@@ -178,28 +139,18 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonBlue" />
 
     <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="20dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView26"
-        app:layout_constraintTop_toBottomOf="@+id/chart" />
-
-    <TextView
 
         android:id="@+id/TxtPositif"
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="40dp"
 
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="24dp"
         android:text="20"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/tanggal_update" />
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/buttonBlue"
@@ -212,15 +163,6 @@
 
         app:layout_constraintStart_toEndOf="@+id/chart"
         app:layout_constraintTop_toBottomOf="@+id/buttonRed" />
-
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/buttonGray"
@@ -241,14 +183,17 @@
         android:layout_width="match_parent"
 
         android:layout_height="200dp"
-        android:scaleType="fitXY"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/chart"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/ecomerce" />
+        app:lottie_rawRes="@raw/docter" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/textView22"
@@ -297,6 +242,18 @@
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/textView24"
         app:layout_constraintTop_toBottomOf="@+id/kabupaten_kota" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:textSize="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Infomasi Grafik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tanggal_update" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
