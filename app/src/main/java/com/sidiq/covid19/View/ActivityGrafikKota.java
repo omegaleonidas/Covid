@@ -43,17 +43,16 @@ public class ActivityGrafikKota extends AppCompatActivity {
         txtPdp = findViewById(R.id.TxtPdp);
         txtOdp = findViewById(R.id.TxtOdp);
         txtUpdate = findViewById(R.id.tanggal_update);
-        cardViewRed = findViewById(R.id.buttonRed);
-        cardViewBlue = findViewById(R.id.buttonBlue);
-        cardViewYellow = findViewById(R.id.buttonYellow);
-        cardViewGray = findViewById(R.id.buttonGray);
+        cardViewRed = findViewById(R.id.cardView2);
+        cardViewBlue = findViewById(R.id.cardView3);
+        cardViewYellow = findViewById(R.id.cardView4);
+        cardViewGray = findViewById(R.id.cardView5);
+
+
 
 
         txtKabupatenKota = findViewById(R.id.kabupaten_kota);
-        cardViewRed.getBackground().setTint(Color.RED);
-        cardViewBlue.getBackground().setTint(Color.BLUE);
-        cardViewYellow.getBackground().setTint(Color.YELLOW);
-        cardViewGray.getBackground().setTint(Color.GRAY);
+
 
         tampilData();
         grafik();
@@ -68,6 +67,7 @@ public class ActivityGrafikKota extends AppCompatActivity {
         txtOdp.setText(bundleDetail.getString("odp"));
         txtUpdate.setText(bundleDetail.getString("update"));
         txtPdp.setText(bundleDetail.getString("pdp"));
+
 
         txtKabupatenKota.setText(bundleDetail.getString("kabupaten_kota"));
 
@@ -92,12 +92,11 @@ public class ActivityGrafikKota extends AppCompatActivity {
         pieData.add(new SliceValue(angka1, Color.RED));
         pieData.add(new SliceValue(Float.parseFloat(sembuh), Color.BLUE).setLabel("positif"));
         pieData.add(new SliceValue(Float.parseFloat(pdp), Color.GREEN));
-        pieData.add(new SliceValue(Float.parseFloat(odp), Color.MAGENTA));
+        pieData.add(new SliceValue(Float.parseFloat(odp), Color.GRAY));
         PieChartData pieChartData = new PieChartData(pieData);
 
 
-
-       //pieChartData.setHasCenterCircle(true).setCenterText1("").setCenterText1FontSize(20).setCenterText1Color(Color.parseColor("#0097A7"));
+        pieChartData.setHasCenterCircle(true).setCenterText1(" Covid 19").setCenterText1FontSize(20).setCenterText1Color(Color.parseColor("#7698ED"));
         pieChartView.setPieChartData(pieChartData);
 
 
